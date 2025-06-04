@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Enchentes e Prevenção</title>
+    <link rel="stylesheet" href="../css/style.css"> </head>
+<body>
+    <header class="cabecalho">
+        <a href="../../index.html" aria-label="Página Inicial VigiaÁgua">
+            <img src="../../src/assets/images/logo.png" alt="Logo VigiaÁgua" class="cabecalho__logo">
+        </a>
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__lista-nav">
+                <a href="../../index.html#problema" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">O Problema</li>
+                </a>
+                <a href="../../index.html#tecnologias" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Tecnologias</li>
+                </a>
+                <a href="../../index.html#objetivos" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Objetivos</li>
+                </a>
+                <a href="../../index.html#publicoalvo" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Público-alvo</li>
+                </a>
+                <a href="../../index.html#beneficios" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Benefícios</li>
+                </a>
+                <a href="../../index.html#comofunciona" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Como Funciona</li>
+                </a>
+                <a href="login.html" class="cabecalho__link-nav cabecalho__login-item"
+                    id="auth-link"
+                    data-loggedout-href="login.html" data-loggedin-href="conta.html">
+                    <li class="cabecalho__item-nav login_icon">
+                        <img id="auth-link-img"
+                            src="../assets/images/login.png" alt="Login"
+                            style="height: 24px; vertical-align: middle;"
+                            data-loggedout-src="../assets/images/login.png"
+                            data-loggedin-src="../assets/images/conta.png" data-loggedin-alt="Conta">
+                        <br>
+                        <span id="auth-link-text"
+                            data-loggedout-text="Login"
+                            data-loggedin-text="Conta">Login</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal principal-quiz">
+        <section class="quiz-container">
+            <h2 class="quiz-titulo">Quiz: Enchentes e Prevenção</h2>
+            <div id="quiz-area">
+                <div id="pergunta-container">
+                    <p id="numero-pergunta-texto" class="quiz-numero-pergunta"></p>
+                    <p id="pergunta-texto" class="quiz-pergunta"></p>
+                    <div id="opcoes-container" class="opcoes-respostas">
+                        </div>
+                </div>
+                <p id="feedback-resposta" class="feedback-resposta"></p>
+                <button id="proxima-pergunta-btn" class="form-botao quiz-botao" style="display: none;">Próxima Pergunta</button>
+            </div>
+
+            <div id="resultado-container" style="display:none;">
+                <h3 id="resultado-titulo" class="quiz-subtitulo">Seu Resultado:</h3>
+                <p id="resultado-texto" class="quiz-resultado-final"></p>
+                <p id="mensagem-final" class="quiz-mensagem-final"></p>
+                <button id="reiniciar-quiz-btn" class="form-botao quiz-botao">Tentar Novamente</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2025 VigiaÁgua Soluções Comunitárias Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+    <script src="../js/estaLogado.js"></script> 
+    <script src="../js/quiz.js"></script>  
+     
+</html>
