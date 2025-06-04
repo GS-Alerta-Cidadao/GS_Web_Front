@@ -36,12 +36,26 @@
 
     <main class="principal">
         <div class="principal__apresentacao">
-            <div class="principal__caixa"></div>
-            <h2 class="principal__titulo">Alerta cidadão <br> conectado</h2>
-            <span class="principal__span">>>>>></span>
-            <div class="principal__circulo"></div>
-            <div class="principal__circulo2"></div>
-            <img src="src/assets/images/img_enchente.png" alt="Imagem de uma enchente" class="principal__img">
+        <div class="principal__caixa"></div>
+        <h2 class="principal__titulo">Alerta cidadão <br> conectado</h2>
+        <span class="principal__span">>>>>></span>
+        <div class="principal__circulo"></div>
+        <div class="principal__circulo2"></div>
+
+        <div class="slideshow-container">
+            <div class="meuSlide fade">
+                <img src="src/assets/images/img_enchente.png" alt="Imagem de enchente 1">
+            </div>
+            <div class="meuSlide fade">
+                <img src="src/assets/images/enchente_publicoalvo.png" alt="Imagem de enchente 2">
+            </div>
+            <div class="meuSlide fade">
+                <img src="src/assets/images/enchente_problema.jpg" alt="Imagem de enchente 3">
+            </div>
+
+            <a class="anterior" onclick="mudarSlide(-1)">&#10094;</a>
+            <a class="proximo" onclick="mudarSlide(1)">&#10095;</a>
+        </div>
         </div>
 
         <section class="principal__problema" id="problema">
@@ -129,4 +143,7 @@
         </p>
     </footer>
 </body>
+
+<script src="src/js/slide.js"></script>
+
 </html>
