@@ -330,7 +330,6 @@
 
 /* quiz */
 
-
 .principal-quiz {
     display: flex;
     flex-direction: column;
@@ -512,7 +511,6 @@
 
 /* calculo */
 
-
 main.calculo {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -634,7 +632,6 @@ main.calculo {
 
 
 /* calculo matematico */
-
 
 .convite-bloco {
     background-color: rgba(230, 247, 255, 0.6);
