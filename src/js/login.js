@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('Email:', emailInput.value);
                 console.log('Senha:', '********');
 
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('userEmail', emailInput.value);
+
                 alert('Login simulado com sucesso!');
                 loginForm.reset(); 
                 window.location.href = "../../index.html"

@@ -77,6 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('Formulário de registro válido. Tentando registrar com:');
                 console.log('Nome:', nomeCompletoInput.value);
                 console.log('Email:', emailRegistroInput.value);
+
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('userEmail', emailRegistroInput.value);
+
                 alert('Registro simulado com sucesso!');
                 registroForm.reset();
                 window.location.href = "../../index.html"

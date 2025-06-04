@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Alerta Cidadão Conectado</title>
-    <link rel="stylesheet" href="../css/style.css">
-    </head>
+    <title>Minha Conta - Alerta Cidadão Conectado</title>
+    <link rel="stylesheet" href="../css/style.css"> </head>
 <body>
     <header class="cabecalho">
         <a href="../../index.html" aria-label="Página Inicial VigiaÁgua">
@@ -38,7 +37,7 @@
                                 src="../assets/images/login.png" alt="Login"
                                 style="height: 24px; vertical-align: middle;"
                                 data-loggedout-src="../assets/images/login.png"
-                                data-loggedin-src="../assets/images/conta.png" data-loggedin-alt="Conta">
+                                data-loggedin-src="../assets/images/account_icon.png" data-loggedin-alt="Conta">
                             <br>
                             <span id="auth-link-text"
                                 data-loggedout-text="Login"
@@ -49,35 +48,16 @@
         </nav>
     </header>
 
-    <main class="principal principal-login">
-        <section class="login-container">
-            <h2 class="login-titulo">Acessar sua Conta</h2>
-            <form id="loginForm" class="login-form" novalidate>
-                <div class="form-grupo">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-input" required placeholder="seuemail@exemplo.com">
-                </div>
-                <div class="form-grupo">
-                    <label for="senha" class="form-label">Senha:</label>
-                    <input type="password" id="senha" name="senha" class="form-input" required placeholder="Digite sua senha">
-                </div>
-                <button type="submit" class="form-botao">Entrar</button>
-                <p id="mensagemErro" class="mensagem-erro" style="display: none;"></p>
-            </form>
-            <div class="login-links-adicionais">
-                <p>Não tem uma conta? <a href="registro.html">Registre-se</a></p>
-            </div>
-        </section>
+    <main class="principal principal-conta">
+    <section class="conta-container">
+        <h2 id="boasVindasUsuario">Minha Conta</h2> <p>Bem-vindo(a)!</p> <button id="logoutButton" class="form-botao">Sair (Logout)</button>
+    </section>
     </main>
 
     <footer class="rodape">
-        <p>
-            © 2025 VigiaÁgua Soluções Comunitárias Todos os direitos reservados.
-        </p>
+        <p>© 2025 VigiaÁgua Soluções Comunitárias Todos os direitos reservados.</p>
     </footer>
 
-    <script src="../js/login.js"></script>
-    <script src="../js/estaLogado.js"></script>
-
-</body>
+    <script src="../js/auth_ui.js"></script>
+    <script src="../js/conta.js"></script> </body>
 </html>

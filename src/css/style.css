@@ -589,3 +589,45 @@ body{
 .registro-links-adicionais a:hover {
     text-decoration: underline;
 }
+
+
+/* conta */
+
+.principal-conta {    
+    text-align: center;
+    padding-top: 50px;
+    min-height: 89%;
+}
+
+.conta-container {
+    max-width: 600px;       
+    margin-left: auto;       
+    margin-right: auto;    
+    background-color: #ffffff;
+    padding: 20px;           
+    border-radius: 8px;   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+#boasVindasUsuario {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria); 
+    font-size: 2.2rem;
+    margin-bottom: 15px; 
+}
+
+.conta-container p { 
+    font-family: var(--fonte-principal);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: var(--cor-quartenaria);
+}
+
+#logoutButton {
+    margin-top: 20px;
+    background-color: var(--cor-secundaria);
+}
+
+#logoutButton:hover {
+    background-color: #7dbca8;
+}

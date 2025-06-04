@@ -31,8 +31,19 @@
                 <a href="../../index.html#comofunciona" class="cabecalho__link-nav">
                     <li class="cabecalho__item-nav">Como Funciona</li>
                 </a>
-                <a href="../pages/login.html" class="cabecalho__link-nav">
-                    <li class="cabecalho__item-nav login_icon"><img  src="../assets/images/login.png" alt="login"> <br> Login</li>
+                <a href="login.html" class="cabecalho__link-nav cabecalho__login-item"
+                    id="auth-link"
+                    data-loggedout-href="login.html" data-loggedin-href="conta.html"> <li class="cabecalho__item-nav login_icon">
+                            <img id="auth-link-img"
+                                src="../assets/images/login.png" alt="Login"
+                                style="height: 24px; vertical-align: middle;"
+                                data-loggedout-src="../assets/images/login.png"
+                                data-loggedin-src="../assets/images/conta.png" data-loggedin-alt="Conta">
+                            <br>
+                            <span id="auth-link-text"
+                                data-loggedout-text="Login"
+                                data-loggedin-text="Conta">Login</span>
+                        </li>
                 </a>
             </ul>
         </nav>
@@ -82,5 +93,6 @@
     </footer>
 
     <script src="../js/registro.js"></script>
+    <script src="../js/estaLogado.js"></script>
 </body>
 </html>
