@@ -9,64 +9,73 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img  src="src/assets/images/logo.png" alt="Logo VigiaÁgua" class="cabecalho__logo">
-        <nav class="cabecalho__nav">
-            <ul class="cabecalho__lista-nav">
-                <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="padrao" title="Aplicar Tema Padrão">
-                    <li class="cabecalho__item-nav item-tema">
-                        <span class="icone-tema icone-tema-padrao"></span>
-                    </li>
-                </a>
-                <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="escuro" title="Aplicar Tema Escuro">
-                    <li class="cabecalho__item-nav item-tema">
-                        <span class="icone-tema icone-tema-escuro"></span>
-                    </li>
-                </a>
-                <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="contraste" title="Aplicar Tema Alto Contraste">
-                    <li class="cabecalho__item-nav item-tema">
-                        <span class="icone-tema icone-tema-contraste"></span>
-                    </li>
-                </a>
+    <a href="../../index.html" aria-label="Página Inicial VigiaÁgua"> <img src="src/assets/images/logo.png" alt="Logo VigiaÁgua" class="cabecalho__logo">
+    </a>
+    
+    <nav class="cabecalho__nav" id="navPrincipal">
+        <ul class="cabecalho__lista-nav">
+            <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="padrao" title="Aplicar Tema Padrão">
+                <li class="cabecalho__item-nav item-tema">
+                    <span class="icone-tema icone-tema-padrao"></span>
+                </li>
+            </a>
+            <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="escuro" title="Aplicar Tema Escuro">
+                <li class="cabecalho__item-nav item-tema">
+                    <span class="icone-tema icone-tema-escuro"></span>
+                </li>
+            </a>
+            <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="contraste" title="Aplicar Tema Alto Contraste">
+                <li class="cabecalho__item-nav item-tema">
+                    <span class="icone-tema icone-tema-contraste"></span>
+                </li>
+            </a>
 
+            <a href="#problema" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">O Problema</li>
+            </a>
+            <a href="#tecnologias" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Tecnologias</li>
+            </a>
+            <a href="#objetivos" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Objetivos</li>
+            </a>
+            <a href="#publicoalvo" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Público-alvo</li>
+            </a>
+            <a href="#beneficios" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Benefícios</li>
+            </a>
+            <a href="#comofunciona" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Como Funciona</li>
+            </a>
 
-                <a href="#problema" class="cabecalho__link-nav">
-                    <li class="cabecalho__item-nav">O Problema</li>
-                </a>
-                <a href="#tecnologias" class="cabecalho__link-nav">
-                    <li class="cabecalho__item-nav">Tecnologias</li>
-                </a>
-                <a href="#objetivos" class="cabecalho__link-nav">
-                    <li class="cabecalho__item-nav">Objetivos</li>
-                </a>
-                <a href="#publicoalvo" class="cabecalho__link-nav">
-                    <li class="cabecalho__item-nav">Público-alvo</li>
-                </a>
-                <a href="#beneficios" class="cabecalho__link-nav">
-                    <li class="cabecalho__item-nav">Benefícios</li>
-                </a>
-                <a href="#comofunciona" class="cabecalho__link-nav">
-                    <li class="cabecalho__item-nav">Como Funciona</li>
-                </a>
-                <a href="src/pages/login.html"
-                    class="cabecalho__link-nav cabecalho__login-item"
-                    id="auth-link"
-                    data-loggedout-href="src/pages/login.html"
-                    data-loggedin-href="src/pages/conta.html"> <li class="cabecalho__item-nav login_icon">
-                            <img id="auth-link-img"
-                                src="src/assets/images/"
-                                alt="Login"
-                                style="height: 24px; vertical-align: middle;"
-                                data-loggedout-src="src/assets/images/login.png"
-                                data-loggedin-src="src/assets/images/conta.png" data-loggedin-alt="Conta">
-                            <br>
-                            <span id="auth-link-text"
-                                data-loggedout-text="Login"
-                                data-loggedin-text="Conta">Login</span>
-                        </li>
-                </a>
-            </ul>
-        </nav>
-    </header>
+            <a href="src/pages/login.html"
+                class="cabecalho__link-nav cabecalho__login-item"
+                id="auth-link"
+                data-loggedout-href="src/pages/login.html"
+                data-loggedin-href="src/pages/conta.html">
+                <li class="cabecalho__item-nav login_icon">
+                    <img id="auth-link-img"
+                        src="src/assets/images/login.png" 
+                        alt="Login"
+                        style="height: 24px; vertical-align: middle;"
+                        data-loggedout-src="src/assets/images/login.png"
+                        data-loggedin-src="src/assets/images/account_icon.png" data-loggedin-alt="Conta">
+                    <br>
+                    <span id="auth-link-text"
+                        data-loggedout-text="Login"
+                        data-loggedin-text="Conta">Login</span>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <button class="cabecalho__menu-hamburguer" id="menuHamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="navPrincipal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
 
     <main class="principal">
         <div class="principal__apresentacao">
@@ -168,7 +177,16 @@
             </p>
            
             <img src="src/assets/images/solucao.png" alt="Protótipo de aplicativo com três telas: uma mostra relatos de problemas urbanos, outra permite enviar um novo relato, e a terceira exibe alertas classificados por gravidade com cores e detalhes." class="principal__solucao-img" >
-        </section>
+
+            <div class="convite-bloco convite-modelo-matematico">
+                <h3 class="convite-bloco__titulo">Descubra a Análise por Trás dos Alertas!</h3>
+                <p class="convite-bloco__texto">
+                    Interessado(a) em como os níveis dos rios são estimados e os riscos calculados? <br>
+                    Conheça o modelo matemático que simula essas variações e fundamenta nosso sistema de alertas.
+                </p>
+                <a href="src/pages/calculo.html" class="form-botao convite-bloco__botao">Explorar Modelo de Cálculo</a>
+            </div>
+            </section>
 
         <section class="quiz-convite-secao" id="quiz_enchente"> <h2 class="quiz-convite__titulo">Teste Seus Conhecimentos!</h2>
             <p class="quiz-convite__texto">
@@ -189,5 +207,6 @@
 <script src="src/js/slide.js"></script>
 <script src="src/js/estaLogado.js"></script>
 <script src="src/js/personalizacaoTema.js"></script>
+<script src="src/js/menuHamburguer.js"></script>
 
 </html>

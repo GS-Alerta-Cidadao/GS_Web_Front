@@ -508,3 +508,223 @@
 .quiz-convite__botao.form-botao:hover {
     background-color: var(--cor-terciaria);
 }
+
+
+/* calculo */
+
+
+main.calculo {
+    padding-top: 20px; /* Espaço abaixo do header fixo */
+    padding-bottom: 40px; /* Espaço acima do footer */
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+    color: var(--cor-quartenaria);
+    display: flex; /* Para centralizar o .conteudo-calculo */
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 80px - 9vh); /* (padding-top do body) - (altura do footer) */
+    background-color: #f8f9fa; /* Um fundo muito suave para a página toda */
+}
+
+.conteudo-calculo {
+    background-color: #ffffff;
+    max-width: 900px;
+    width: 95%; /* Para ter um pouco de margem em telas menores */
+    padding: 25px 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.conteudo-calculo h1 {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
+    font-size: 2.4rem; /* Ajustado para o contexto */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.conteudo-calculo h2 {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 1.9rem; /* Ajustado */
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 8px;
+}
+
+.conteudo-calculo h3 {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 1.5rem; /* Ajustado */
+    font-weight: 600; /* Um pouco mais de peso */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.conteudo-calculo p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.tabela-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-x: auto; /* Para rolagem horizontal em telas pequenas */
+}
+
+.conteudo-calculo table {
+    width: auto; /* Permite que a tabela seja menor se o conteúdo for pequeno */
+    min-width: 350px;
+    border-collapse: collapse;
+    margin: 15px 0; /* Margem vertical para a tabela */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.conteudo-calculo th, .conteudo-calculo td {
+    border: 1px solid #e0e0e0; /* Borda mais suave */
+    padding: 10px 12px; /* Padding interno das células */
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.conteudo-calculo th {
+    background-color: var(--cor-primaria); /* Cabeçalho da tabela com cor primária */
+    color: white; /* Texto branco no cabeçalho */
+    font-weight: 600;
+}
+
+.conteudo-calculo tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebrado suave */
+}
+.conteudo-calculo tbody tr:hover {
+    background-color: #f1f1f1; /* Efeito hover nas linhas */
+}
+
+.funcao-matematica {
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    background-color: #e9ecef; /* Fundo suave para a função */
+    color: var(--cor-terciaria);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.15em;
+    margin: 15px 0;
+    overflow-x: auto; /* Para rolagem se a função for muito longa */
+    border-left: 5px solid var(--cor-primaria);
+}
+
+.funcao-matematica em {
+    font-style: normal; /* Para o 'f(x)' e 'x' não ficarem em itálico dentro do bloco */
+}
+
+.grafico-rio {
+    display: block;
+    max-width: 100%; /* Garante que o gráfico seja responsivo */
+    height: auto;
+    margin: 25px auto; /* Centraliza o gráfico */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+/* calculo matematico */
+
+
+.convite-bloco {
+    background-color: rgba(230, 247, 255, 0.6); /* Um azul bem claro e suave, semi-transparente */
+    border-top: 3px solid var(--cor-primaria);
+    border-bottom: 3px solid var(--cor-primaria);
+    padding: 35px 25px;
+    margin-top: 50px; /* Espaçamento acima do bloco de convite */
+    margin-bottom: 20px; /* Espaçamento abaixo, dentro da seção principal__solucao */
+    text-align: center;
+    border-radius: 8px;
+    width: 90%; /* Ocupa uma boa parte da largura da seção pai */
+    max-width: 800px; /* Limita a largura máxima */
+    /* Como .principal__solucao tem align-items: center, este bloco será centralizado se tiver max-width */
+}
+
+.convite-bloco__titulo {
+    font-family: var(--fonte-secundaria); /* Oswald */
+    color: var(--cor-terciaria); /* Cor escura para contraste no fundo claro */
+    font-size: 2rem; /* Tamanho do título do convite */
+    margin-bottom: 15px;
+}
+
+.convite-bloco__texto {
+    font-family: var(--fonte-principal); /* Inter */
+    color: var(--cor-quartenaria);
+    font-size: 1.1rem;
+    line-height: 1.65;
+    margin-bottom: 30px;
+    max-width: 650px; /* Para o texto não ficar excessivamente largo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.convite-bloco__botao.form-botao {
+    background-color: var(--cor-terciaria); /* Usando a cor terciária para diferenciar de outros botões */
+    color: white;
+    padding: 12px 28px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.convite-bloco__botao.form-botao:hover {
+    background-color: var(--cor-primaria); /* Ao passar o mouse, usa a cor primária */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+/* Ajuste para tema escuro, se necessário */
+body.tema-escuro .convite-bloco {
+    background-color: rgba(22, 27, 34, 0.7); /* Fundo escuro para o convite no tema escuro */
+    border-top-color: var(--cor-secundaria);
+    border-bottom-color: var(--cor-secundaria);
+}
+
+body.tema-escuro .convite-bloco__titulo {
+    color: var(--cor-secundaria); /* Texto claro no tema escuro */
+}
+
+body.tema-escuro .convite-bloco__texto {
+    color: var(--cor-quartenaria); /* Texto claro no tema escuro */
+}
+
+body.tema-escuro .convite-bloco__botao.form-botao {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria); /* Texto escuro no botão claro */
+}
+
+body.tema-escuro .convite-bloco__botao.form-botao:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Ajuste para tema contraste, se necessário */
+body.tema-contraste .convite-bloco {
+    background-color: #000000;
+    border-top-color: var(--cor-primaria);
+    border-bottom-color: var(--cor-primaria);
+}
+body.tema-contraste .convite-bloco__titulo,
+body.tema-contraste .convite-bloco__texto {
+    color: var(--cor-primaria); /* Texto amarelo no tema contraste */
+}
+body.tema-contraste .convite-bloco__botao.form-botao {
+    background-color: var(--cor-primaria); /* Botão amarelo */
+    color: #000000; /* Texto preto */
+    border: 1px solid #000000;
+}
+body.tema-contraste .convite-bloco__botao.form-botao:hover {
+    background-color: var(--cor-secundaria); /* Botão branco */
+}
