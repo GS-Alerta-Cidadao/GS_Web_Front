@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Alerta Cidadão Conectado</title>
+    <link rel="stylesheet" href="../css/style.css">
+    </head>
+<body>
+    <header class="cabecalho">
+        <a href="../../index.html" aria-label="Página Inicial VigiaÁgua">
+            <img src="../../src/assets/images/logo.png" alt="Logo VigiaÁgua" class="cabecalho__logo">
+        </a>
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__lista-nav">
+                <a href="../../index.html#problema" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">O Problema</li>
+                </a>
+                <a href="../../index.html#tecnologias" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Tecnologias</li>
+                </a>
+                <a href="../../index.html#objetivos" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Objetivos</li>
+                </a>
+                <a href="../../index.html#publicoalvo" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Público-alvo</li>
+                </a>
+                <a href="../../index.html#beneficios" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Benefícios</li>
+                </a>
+                <a href="../../index.html#comofunciona" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Como Funciona</li>
+                </a>
+                <a href="src/pages/login.html" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav login_icon"><img  src="../assets/images/login.png" alt="login"> <br> Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal principal-login">
+        <section class="login-container">
+            <h2 class="login-titulo">Acessar sua Conta</h2>
+            <form id="loginForm" class="login-form" novalidate>
+                <div class="form-grupo">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form-grupo">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input type="password" id="senha" name="senha" class="form-input" required placeholder="Digite sua senha">
+                </div>
+                <button type="submit" class="form-botao">Entrar</button>
+                <p id="mensagemErro" class="mensagem-erro" style="display: none;"></p>
+            </form>
+            <div class="login-links-adicionais">
+                <p>Não tem uma conta? <a href="registro.html">Registre-se</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            © 2025 VigiaÁgua Soluções Comunitárias Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

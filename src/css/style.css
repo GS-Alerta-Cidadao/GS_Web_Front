@@ -17,7 +17,6 @@
     --cor-secundaria: #94d2bd;
     --cor-terciaria:#021828;
     --cor-quartenaria:#282828;
-
     --sombra:#00000061;
 }
 
@@ -52,7 +51,10 @@ body{
 .cabecalho__lista-nav{
     display: flex;
     align-items: center; 
-    width: 650px;   
+    justify-content: right;
+    width: 710px;  
+    padding-right: 0px; 
+    margin-right: 0px;
 }
 
 .cabecalho__link-nav{
@@ -69,6 +71,9 @@ body{
     margin: 0 1%;
 }
 
+.login_icon{
+    font-size: small;
+}
 /* Main - Apresentação */
 
 .principal{
@@ -356,4 +361,231 @@ body{
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+
+/* login */
+
+.principal-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px - 9vh);
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.login-titulo {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.login-form .form-grupo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form .form-label {
+    display: block;
+    font-family: var(--fonte-principal);
+    color: var(--cor-quartenaria);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.login-form .form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.login-form .form-input:focus {
+    border-color: var(--cor-secundaria);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--cor-secundaria-transparente, rgba(148, 210, 189, 0.3));
+}
+
+.login-form .form-botao {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte-principal);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-form .form-botao:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.mensagem-erro {
+    color: #e74c3c;
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+    margin-top: 15px;
+    min-height: 1.2em; 
+}
+
+.login-links-adicionais {
+    margin-top: 25px;
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+}
+
+.login-links-adicionais p {
+    margin-bottom: 10px;
+}
+
+.login-links-adicionais a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.login-links-adicionais a:hover {
+    text-decoration: underline;
+}
+
+
+/* registro */
+
+.principal-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px - 9vh);
+    padding: 40px 20px; 
+    background-color: #f4f7f6; 
+}
+
+.registro-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.registro-titulo {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.registro-form .form-grupo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.registro-form .form-label {
+    display: block;
+    font-family: var(--fonte-principal);
+    color: var(--cor-quartenaria);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.registro-form .form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.registro-form .form-input:focus {
+    border-color: var(--cor-secundaria);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--cor-secundaria-transparente, rgba(148, 210, 189, 0.3));
+}
+
+.registro-form .form-grupo-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.registro-form .form-grupo-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+    accent-color: var(--cor-primaria); 
+}
+
+.registro-form .form-grupo-checkbox .form-label-checkbox {
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+    color: var(--cor-quartenaria);
+    margin-bottom: 0;
+}
+
+.registro-form .form-grupo-checkbox a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+.registro-form .form-grupo-checkbox a:hover {
+    text-decoration: underline;
+}
+
+.registro-form .form-botao {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte-principal);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.registro-form .form-botao:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.registro-links-adicionais {
+    margin-top: 25px;
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+}
+
+.registro-links-adicionais p {
+    margin-bottom: 10px;
+}
+
+.registro-links-adicionais a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.registro-links-adicionais a:hover {
+    text-decoration: underline;
 }

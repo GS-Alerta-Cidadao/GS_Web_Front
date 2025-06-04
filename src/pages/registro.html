@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se - Alerta Cidadão Conectado</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="../../index.html" aria-label="Página Inicial VigiaÁgua">
+            <img src="../../src/assets/images/logo.png" alt="Logo VigiaÁgua" class="cabecalho__logo">
+        </a>
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__lista-nav">
+                <a href="../../index.html#problema" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">O Problema</li>
+                </a>
+                <a href="../../index.html#tecnologias" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Tecnologias</li>
+                </a>
+                <a href="../../index.html#objetivos" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Objetivos</li>
+                </a>
+                <a href="../../index.html#publicoalvo" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Público-alvo</li>
+                </a>
+                <a href="../../index.html#beneficios" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Benefícios</li>
+                </a>
+                <a href="../../index.html#comofunciona" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav">Como Funciona</li>
+                </a>
+                <a href="../pages/login.html" class="cabecalho__link-nav">
+                    <li class="cabecalho__item-nav login_icon"><img  src="../assets/images/login.png" alt="login"> <br> Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal principal-registro">
+        <section class="registro-container">
+            <h2 class="registro-titulo">Crie sua Conta</h2>
+            <form id="registroForm" class="registro-form" novalidate>
+                <div class="form-grupo">
+                    <label for="nomeCompleto" class="form-label">Nome Completo:</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" class="form-input" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-grupo">
+                    <label for="emailRegistro" class="form-label">Email:</label>
+                    <input type="email" id="emailRegistro" name="emailRegistro" class="form-input" required placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form-grupo">
+                    <label for="endereco" class="form-label">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" class="form-input" required placeholder="Digite aqui seu endereço">
+                </div>
+                <div class="form-grupo">
+                    <label for="senhaRegistro" class="form-label">Senha:</label>
+                    <input type="password" id="senhaRegistro" name="senhaRegistro" class="form-input" required placeholder="Crie uma senha (mín. 6 caracteres)">
+                </div>
+                <div class="form-grupo">
+                    <label for="confirmarSenha" class="form-label">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" class="form-input" required placeholder="Confirme sua senha">
+                </div>
+                 <div class="form-grupo form-grupo-checkbox">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos" class="form-label-checkbox">Eu li e aceito os <a href="#" target="_blank">Termos de Uso</a>.</label>
+                </div>
+                <button type="submit" class="form-botao">Registrar</button>
+                <p id="mensagemErroRegistro" class="mensagem-erro" style="display: none;"></p>
+            </form>
+            <div class="registro-links-adicionais">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            © 2025 VigiaÁgua Soluções Comunitárias Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="../js/registro.js"></script>
+</body>
+</html>
