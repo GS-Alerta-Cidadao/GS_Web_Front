@@ -1,0 +1,54 @@
+.cabecalho__item-nav:hover{
+    border-bottom: 2px solid var(--cor-primaria);
+    
+}
+
+.principal__caixa{
+    animation: aparecerEsquerda 2s ease-out forwards;
+}
+
+.principal__titulo,
+.principal__span{
+    animation: aparecer 2s forwards ease-in;
+}
+
+.principal__circulo,
+.principal__circulo2{
+    animation: pulsar 2s infinite ease-in-out ;
+    animation-delay: 5s;
+}
+
+.principal__img{
+    animation: aparecer 2s forwards ease-in;
+}
+
+@keyframes aparecerEsquerda {
+    from{
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.2; 
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.4; 
+    }
+}

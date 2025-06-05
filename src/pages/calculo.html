@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo e Modelagem - Alerta Cidadão Conectado</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="../../index.html" aria-label="Página Inicial VigiaÁgua">
+            <img src="../assets/images/logo.png" alt="Logo VigiaÁgua" class="cabecalho__logo">
+        </a>
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__lista-nav">
+                <a href="../../index.html" class="cabecalho__link-nav" style="width: 150px; margin-left: 500px;">
+                    <li class="cabecalho__item-nav">Página Inicial</li>
+                </a>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="calculo">
+        <section class="conteudo-calculo">
+            <h1>Análise Matemática do Nível do Rio Tietê</h1>
+            <p>Este estudo, foca no monitoramento e modelagem matemática dos níveis do Rio Tietê, especificamente na região da Ponte do Piqueri em São Paulo. Esta é uma área historicamente afetada por inundações. O objetivo principal é utilizar modelos matemáticos para representar e prever a elevação dos níveis dos rios durante períodos de chuva contínua, auxiliando na tomada de decisões para planejamento de evacuação e mitigação de riscos.</p>
+
+            <h2>Simulação de Níveis do Rio Durante 10 Dias de Chuva</h2>
+            <p>Para desenvolver o modelo matemático, foram simulados dados de elevação do nível da água do Rio Tietê (na Ponte do Piqueri) ao longo de 10 dias consecutivos de chuva. O estudo considera que o risco de transbordamento do rio acontece quando o nível da água ultrapassa 2,0 metros.</p>
+
+            <h3>Tabela de Níveis Simulados do Rio Tietê</h3>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Nível do Rio (m)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>0,5</td></tr>
+                        <tr><td>2</td><td>0,8</td></tr>
+                        <tr><td>3</td><td>1,2</td></tr>
+                        <tr><td>4</td><td>1,8</td></tr>
+                        <tr><td>5</td><td>2,3</td></tr>
+                        <tr><td>6</td><td>2,7</td></tr>
+                        <tr><td>7</td><td>2,9</td></tr>
+                        <tr><td>8</td><td>2,5</td></tr>
+                        <tr><td>9</td><td>2,0</td></tr>
+                        <tr><td>10</td><td>1,5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Modelo Matemático (Função Polinomial)</h3>
+            <p>Com base nos dados simulados, uma função polinomial de terceiro grau foi determinada para modelar o comportamento do nível do rio durante os 10 dias de chuva:</p>
+            <p class="funcao-matematica"><em>f(x) = -0,0025x³ - 0,0568x² + 0,9564x - 0,5167</em></p>
+            <p>Nesta função, <em>x</em> representa o dia da observação.</p>
+
+            <h3>Gráfico da Variação do Nível do Rio</h3>
+            <p>O gráfico a seguir (Figura 1 do documento) ilustra visualmente a variação do nível do rio conforme modelado pela função polinomial ao longo dos 10 dias de chuva.</p>
+            <img src="../assets/images/grafico.png" alt="Gráfico da variação do nível do rio Tietê em 10 dias de chuva" class="grafico-rio">
+            
+            <p>A análise da curva do gráfico indica que o nível da água aumenta nos primeiros dias, atingindo seu ponto máximo aproximadamente no sétimo dia. Após o pico, o nível começa a diminuir, mesmo com a continuidade das chuvas, possivelmente devido à redução da intensidade da chuva ou à capacidade de absorção do solo e do sistema de drenagem. O período de maior criticidade, com risco de transbordamento (nível acima de 2,0 metros), é observado entre o quinto e o nono dia.</p>
+
+            <p>Este tipo de modelagem matemática é uma ferramenta valiosa para a compreensão de fenômenos naturais como enchentes e contribui significativamente para o desenvolvimento de sistemas de alerta e ações preventivas em áreas urbanas vulneráveis.</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            © 2025 VigiaÁgua Soluções Comunitárias Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="../js/slide.js"></script> 
+    <script src="../js/estaLogado.js"></script>
+    <script src="../js/personalizacaoTema.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta cidadão conectado</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+    <a href="../../index.html" aria-label="Página Inicial VigiaÁgua"> <img src="src/assets/images/logo.png" alt="Logo VigiaÁgua" class="cabecalho__logo">
+    </a>
+    
+    <nav class="cabecalho__nav" id="navPrincipal">
+        <ul class="cabecalho__lista-nav">
+            <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="padrao" title="Aplicar Tema Padrão">
+                <li class="cabecalho__item-nav item-tema">
+                    <span class="icone-tema icone-tema-padrao"></span>
+                </li>
+            </a>
+            <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="escuro" title="Aplicar Tema Escuro">
+                <li class="cabecalho__item-nav item-tema">
+                    <span class="icone-tema icone-tema-escuro"></span>
+                </li>
+            </a>
+            <a href="#" class="cabecalho__link-nav tema-switcher" data-tema="contraste" title="Aplicar Tema Alto Contraste">
+                <li class="cabecalho__item-nav item-tema">
+                    <span class="icone-tema icone-tema-contraste"></span>
+                </li>
+            </a>
+
+            <a href="#problema" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">O Problema</li>
+            </a>
+            <a href="#tecnologias" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Tecnologias</li>
+            </a>
+            <a href="#objetivos" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Objetivos</li>
+            </a>
+            <a href="#publicoalvo" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Público-alvo</li>
+            </a>
+            <a href="#beneficios" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Benefícios</li>
+            </a>
+            <a href="#comofunciona" class="cabecalho__link-nav">
+                <li class="cabecalho__item-nav">Como Funciona</li>
+            </a>
+
+            <a href="src/pages/login.html"
+                class="cabecalho__link-nav cabecalho__login-item"
+                id="auth-link"
+                data-loggedout-href="src/pages/login.html"
+                data-loggedin-href="src/pages/conta.html">
+                <li class="cabecalho__item-nav login_icon">
+                    <img id="auth-link-img"
+                        src="src/assets/images/login.png" 
+                        alt="Login"
+                        style="height: 24px; vertical-align: middle;"
+                        data-loggedout-src="src/assets/images/login.png"
+                        data-loggedin-src="src/assets/images/conta.png" data-loggedin-alt="Conta">
+                    <br>
+                    <span id="auth-link-text"
+                        data-loggedout-text="Login"
+                        data-loggedin-text="Conta">Login</span>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <button class="cabecalho__menu-hamburguer" id="menuHamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="navPrincipal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+    <main class="principal">
+        <div class="principal__apresentacao">
+        <div class="principal__caixa"></div>
+        <h2 class="principal__titulo">Alerta cidadão <br> conectado</h2>
+        <span class="principal__span">>>>>></span>
+        <div class="principal__circulo"></div>
+        <div class="principal__circulo2"></div>
+
+        <div class="slideshow-container">
+            <div class="meuSlide fade">
+                <img src="src/assets/images/img_enchente.png" alt="Imagem de enchente 1">
+            </div>
+            <div class="meuSlide fade">
+                <img src="src/assets/images/enchente_publicoalvo.png" alt="Imagem de enchente 2">
+            </div>
+            <div class="meuSlide fade">
+                <img src="src/assets/images/enchente_problema.jpg" alt="Imagem de enchente 3">
+            </div>
+
+            <a class="anterior" onclick="mudarSlide(-1)">&#10094;</a>
+            <a class="proximo" onclick="mudarSlide(1)">&#10095;</a>
+        </div>
+        </div>
+
+        <section class="principal__problema" id="problema">
+            <div class="principal__problema-conteudo">
+                <h2 class="principal__problema-titulo">O Problema</h2>
+                <p class="principal__problema-texto">
+                    As enchentes afetam comunidades com alagamentos repentinos, gerando riscos à vida e prejuízos materiais.
+                </p><br>
+                <p class="principal__problema-texto">
+                    Faltam alertas eficazes e localizados que ajudem moradores a se protegerem com antecedência e segurança.
+                </p>
+            </div>
+            <img src="src/assets/images/enchente_problema.jpg" alt="Menino de costas andando com uma bicicleta no meio de uma enchente" class="principal__problema-img" >
+        </section>
+
+        <section class="principal__tecnologias" id="tecnologias">
+            <div class="principal__tecnologias-linha-conteudo">
+                <div class="principal__tecnologias-conteudo">
+                    <h2 class="principal__tecnologias-titulo">Tecnologias</h2>
+                    <p class="principal__tecnologias-texto">
+                        Sensores construídos com Arduino e IoT captam o nível da água em tempo real para monitoramento contínuo. 
+                    </p><br>
+                    <p class="principal__tecnologias-texto">
+                    A aplicação será desenvolvida com HTML, CSS, JavaScript e Python, integrando dados dos sensores aos alertas.
+                    </p>
+                </div>
+                <img src="src/assets/images/tecnologias.png" alt="Tecnologias utilizadas: HTML, CSS,JavaScript, Pyhton e Arduíno" class="principal__tecnologias-img" >
+            </div>
+
+            <div class="convite-bloco convite-sensores-iot">
+                <h3 class="convite-bloco__titulo">Nossos Sensores em Ação!</h3>
+                <p class="convite-bloco__texto">
+                    Veja como nossa solução com Arduino e sensores IoT monitora os níveis dos rios em tempo real e pode gerar alertas cruciais para a sua segurança.
+                </p>
+                <a href="https://wokwi.com/projects/432203878280288257" class="form-botao convite-bloco__botao" target="_blank">Conhecer a Simulação do gerador de Alerta</a>
+            </div>
+        </section>
+
+        <section class="principal__objetivo" id="objetivos">
+            <div class="principal__objetivo-conteudo">
+                <h2 class="principal__objetivo-titulo">Objetivo</h2>
+                <p class="principal__objetivo-texto">
+                    Alertar moradores com rapidez e precisão sobre enchentes iminentes em suas micro-regiões.
+                </p><br>
+                <p class="principal__objetivo-texto">
+                   Fortalecer o engajamento da comunidade na prevenção e resposta a riscos ambientais.
+                </p>
+            </div>
+            <img src="src/assets/images/objetivo.png" alt="Desenho de um celular com um símbolo de alerta na tela, três casas ao fundo e uma árvore ao lado." class="principal__objetivo-img" >
+        </section>
+
+        <section class="principal__publicoalvo" id="publicoalvo">
+            <div class="principal__publicoalvo-conteudo">
+                <h2 class="principal__publicoalvo-titulo">Público-alvo</h2>
+                <p class="principal__publicoalvo-texto">
+                    Moradores de áreas urbanas vulneráveis a enchentes frequentes e com acesso limitado a alertas oficiais.
+                </p><br>
+                <p class="principal__publicoalvo-texto">
+                   Líderes comunitários, voluntários e equipes de defesa civil locais também serão beneficiados.
+                </p>
+            </div>
+            <img src="src/assets/images/enchente_publicoalvo.png" alt="Imagem de dois homens com um barco em uma enchente." class="principal__publicoalvo-img" >
+        </section>
+
+        <section class="principal__beneficios" id="beneficios">
+            <div class="principal__beneficios-conteudo">
+                <h2 class="principal__beneficios-titulo">Benefícios</h2>
+                <p class="principal__beneficios-texto">
+                    Alerta antecipado de enchentes reduz perdas materiais e protege vidas.
+                </p><br>
+                <p class="principal__beneficios-texto">
+                   Interface simples permite participação ativa dos moradores no monitoramento.
+                </p>
+            </div>
+            <img src="src/assets/images/beneficios.png" alt="Imagem do protótipo da solução: celular exibindo uma mensagem de alerta." class="principal__beneficios-img" >
+        </section>
+
+        <section class="principal__solucao" id="comofunciona">
+           
+            <h2 class="principal__solucao-titulo">Como a solução ajudará no dia a dia do usuário </h2>
+            <p class="principal__solucao-texto">
+                Moradores recebem alertas visuais e sonoros no celular sempre que há risco próximo.
+            </p><br>
+            <p class="principal__solucao-texto">
+                Podem registrar e confirmar ocorrências, colaborando com o bem-estar coletivo.
+            </p>
+           
+            <img src="src/assets/images/solucao.png" alt="Protótipo de aplicativo com três telas: uma mostra relatos de problemas urbanos, outra permite enviar um novo relato, e a terceira exibe alertas classificados por gravidade com cores e detalhes." class="principal__solucao-img" >
+
+            <div class="convite-bloco convite-modelo-matematico">
+                <h3 class="convite-bloco__titulo">Descubra a Análise por Trás dos Alertas!</h3>
+                <p class="convite-bloco__texto">
+                    Interessado(a) em como os níveis dos rios são estimados e os riscos calculados? <br>
+                    Conheça o modelo matemático que simula essas variações e fundamenta nosso sistema de alertas.
+                </p>
+                <a href="src/pages/calculo.html" class="form-botao convite-bloco__botao">Explorar Modelo de Cálculo</a>
+            </div>
+            </section>
+
+        <section class="quiz-convite-secao" id="quiz_enchente"> <h2 class="quiz-convite__titulo">Teste Seus Conhecimentos!</h2>
+            <p class="quiz-convite__texto">
+                Você está preparado(a) para os desafios das enchentes? <br>
+                Descubra o quanto você sabe sobre prevenção e segurança participando do nosso quiz!
+            </p>
+            <a href="src/pages/quiz.html" class="form-botao quiz-convite__botao">Começar o Quiz Agora!</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            © 2025 VigiaÁgua Soluções Comunitárias Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+
+<script src="src/js/slide.js"></script>
+<script src="src/js/estaLogado.js"></script>
+<script src="src/js/personalizacaoTema.js"></script>
+<script src="src/js/menuHamburguer.js"></script>
+
+</html>
