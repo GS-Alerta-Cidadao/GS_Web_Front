@@ -57,6 +57,18 @@ body.tema-escuro .cabecalho__item-nav:hover {
     border-bottom: 2px solid var(--cor-primaria);
 }
 
+body.tema-escuro .conteudo-calculo{
+    background-color: #0d1117;
+}
+
+body.tema-escuro .funcao-matematica{
+    color: #000000;
+}
+
+body.tema-escuro .tabela-container tr{
+    background-color: #000000;
+}
+
 body.tema-escuro .rodape {
     background-color: #161b22;
     color: var(--cor-secundaria);
@@ -143,6 +155,23 @@ body.tema-contraste {
     background-color: #000000;
     color: var(--cor-terciaria);
 }
+
+body.tema-contraste .conteudo-calculo{
+    background-color: #0d1117;
+}
+
+body.tema-contraste .funcao-matematica{
+    color: #000000;
+}
+
+body.tema-contraste .tabela-container tr{
+    background-color: #000000;
+}
+
+body.tema-contraste .tabela-container th{
+    color: #000000;
+}
+
 body.tema-contraste .cabecalho,
 body.tema-contraste .rodape,
 body.tema-contraste .login-container,

@@ -49,6 +49,7 @@ body{
 
 .cabecalho__logo{
     width: 300px;
+    border-radius: 16px;
 }
 
 .cabecalho__lista-nav{
